@@ -1,6 +1,6 @@
 const url = (window.location.hostname.includes('localhost'))
                 ? 'http://localhost:8080'
-                : 'http://localhost:8080'; // <-- Web server url
+                : 'https://taskmanager-spr.herokuapp.com/'; // <-- Web server url
 
 const signupDiv = document.getElementById('signupDiv');
 const loginDiv = document.getElementById('loginDiv');
