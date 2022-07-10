@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Task Manager</title>
+
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <nav class="navigation">
+            <button onclick="loginPage()">Log in</button>
+            <button onclick="signupPage()">Sign up</button>
+        </nav>
+
+        <div id="signupDiv" class="divHide">
+            <p id="errorMsg-sg" hidden>Message</p>
+            <input id="usernameText-sg" type="text" placeholder="Username"/>
+            <input id="emailText-sg" type="text" placeholder="Email"/>
+            <input id="passwordText-sg" type="password" placeholder="Password"/>
+            <input id="cpasswordText-sg" type="password" placeholder="Confirm Password"/>
+
+            <button id="signupButton" onclick="signup()">Sign up</button>
+        </div>
+
+        <div id="loginDiv" class="forumCard">
+            <p id="errorMsg-lg" hidden>Message</p>
+            <input id="userText-lg" type="text" placeholder="Username or Email"/>
+            <input id="passwordText-lg" type="password" placeholder="Password"/>
+
+            <button id="loginButton" onclick="login()">Log in</button>
+        </div>
+
+        <div id="tasksCardDiv" class="divHide">
+            <div id="addTasksCardDiv" class="addTaskCard">
+                <h3>Task Manager</h3>
+                <p id="errorTaskMsg" hidden>Message</p>
+                <input id="taskNameText" type="text" placeholder="Task Name"/>
+                <input id="taskDescriptionText" type="text" placeholder="Task Description"/>
+                <button id="addTaskButton" onclick="addTask(event)">Add Task</button>
+                <button id="saveTaskButton" onclick="editTask(event)">Save</button>
+            </div>
+
+            <div class="tasksListCard">
+                <ul id="tasksList">
+
+                </ul>
+            </div>
+        </div>
+    </body>
+
+    <script src="js/index.js"></script>
+</html>
