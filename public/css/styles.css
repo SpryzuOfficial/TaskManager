@@ -75,7 +75,7 @@ body {
 
 .forumCard input {
     margin: 1rem 0.8rem;
-    border: 0;
+    border: 1 solid magenta;
     padding: 0 0.7rem;
 
     border-radius: 0.85rem;
